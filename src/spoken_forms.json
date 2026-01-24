@@ -90,7 +90,10 @@
       "content": "keepContentFilter",
       "empty": "keepEmptyFilter",
       "its": "inferPreviousMark",
-      "visible": "visible"
+      "visible": "visible",
+      "reference": "reference",
+      "file name": "filename",
+      "base": "filenameWithoutExtension"
     },
     "every_scope_modifier": { "every": "every" },
     "ancestor_scope_modifier": { "grand": "ancestor" },
@@ -182,7 +185,8 @@
       "short paint": "boundedNonWhitespaceSequence",
       "short block": "boundedParagraph",
       "link": "url",
-      "cell": "notebookCell"
+      "cell": "notebookCell",
+      "that": "that"
     },
     "surrounding_pair_scope_type": {
       "string": "string"
