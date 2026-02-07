@@ -1,6 +1,8 @@
 mode: command
 mode: user.cursorless_spoken_form_test
 tag: user.cursorless
+not tag: user.mouse_clock_showing
+not tag: user.clock_ring_showing
 -
 
 <user.cursorless_action_or_ide_command> <user.cursorless_target>:
