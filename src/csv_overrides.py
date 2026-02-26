@@ -270,6 +270,9 @@ def update_dicts(
     # Assign result to talon context list
     lists: ListToSpokenForms = defaultdict(dict)
     for entry in spoken_form_entries:
+        # Make sure that we add empty lists. Otherwise we can't remove spoken forms for existing lists.
+        if not entry.spoken_forms:
+            lists.setdefault(entry.list_name, {})
         for spoken_form in entry.spoken_forms:
             lists[entry.list_name][spoken_form] = entry.id
     assign_lists_to_context(ctx, lists, pluralize_lists)
