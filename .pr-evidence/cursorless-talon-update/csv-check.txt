@@ -1,0 +1,8 @@
+# captain CSV check (ids that do not exist in the spoken-form lists)
+## against pure upstream/main (dfa06bd)
+UNKNOWN id modifiers.csv base, filenameWithoutExtension
+UNKNOWN id modifiers.csv file name, filename
+UNKNOWN id modifiers.csv reference, reference
+UNKNOWN id modifier_scope_types.csv that, that
+## against this branch
+(no output = every entry resolves)
